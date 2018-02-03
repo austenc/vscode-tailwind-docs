@@ -3,6 +3,7 @@
     "displayName": "Tailwind Docs",
     "description": "Easily access the Tailwind CSS documentation from within Code",
     "version": "1.0.0",
+    "icon": "img/icon.jpg",
     "publisher": "austenc",
     "repository": "https://github.com/austenc/vscode-tailwind-docs",
     "engines": {
