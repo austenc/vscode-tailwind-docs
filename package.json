@@ -1,0 +1,400 @@
+{
+    "name": "tailwind-docs",
+    "displayName": "Tailwind Docs",
+    "description": "Easily access the Tailwind CSS documentation from within Code",
+    "version": "0.0.0",
+    "publisher": "austenc",
+    "repository": "https://github.com/austenc/vscode-tailwind-docs",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.tailwindDocsAddingNewUtilities",
+        "onCommand:extension.tailwindDocsBackgroundAttachment",
+        "onCommand:extension.tailwindDocsBackgroundColor",
+        "onCommand:extension.tailwindDocsBackgroundPosition",
+        "onCommand:extension.tailwindDocsBackgroundRepeat",
+        "onCommand:extension.tailwindDocsBackgroundSize",
+        "onCommand:extension.tailwindDocsBorderColor",
+        "onCommand:extension.tailwindDocsBorderRadius",
+        "onCommand:extension.tailwindDocsBorderStyle",
+        "onCommand:extension.tailwindDocsBorderWidth",
+        "onCommand:extension.tailwindDocsColors",
+        "onCommand:extension.tailwindDocsConfiguration",
+        "onCommand:extension.tailwindDocsContainer",
+        "onCommand:extension.tailwindDocsControllingFileSize",
+        "onCommand:extension.tailwindDocsCursor",
+        "onCommand:extension.tailwindDocsDisplay",
+        "onCommand:extension.tailwindDocsExamples",
+        "onCommand:extension.tailwindDocsExtractingComponents",
+        "onCommand:extension.tailwindDocsFlexboxAlignContent",
+        "onCommand:extension.tailwindDocsFlexboxAlignItems",
+        "onCommand:extension.tailwindDocsFlexboxAlignSelf",
+        "onCommand:extension.tailwindDocsFlexboxDirection",
+        "onCommand:extension.tailwindDocsFlexboxDisplay",
+        "onCommand:extension.tailwindDocsFlexboxFlexGrowShrink",
+        "onCommand:extension.tailwindDocsFlexboxJustifyContent",
+        "onCommand:extension.tailwindDocsFlexboxWrapping",
+        "onCommand:extension.tailwindDocsFloats",
+        "onCommand:extension.tailwindDocsFontWeight",
+        "onCommand:extension.tailwindDocsFonts",
+        "onCommand:extension.tailwindDocsForms",
+        "onCommand:extension.tailwindDocsFunctionsAndDirectives",
+        "onCommand:extension.tailwindDocsHeight",
+        "onCommand:extension.tailwindDocsInstallation",
+        "onCommand:extension.tailwindDocsLetterSpacing",
+        "onCommand:extension.tailwindDocsLineHeight",
+        "onCommand:extension.tailwindDocsLists",
+        "onCommand:extension.tailwindDocsMaxHeight",
+        "onCommand:extension.tailwindDocsMaxWidth",
+        "onCommand:extension.tailwindDocsMinHeight",
+        "onCommand:extension.tailwindDocsMinWidth",
+        "onCommand:extension.tailwindDocsOpacity",
+        "onCommand:extension.tailwindDocsOverflow",
+        "onCommand:extension.tailwindDocsPointerEvents",
+        "onCommand:extension.tailwindDocsPositioning",
+        "onCommand:extension.tailwindDocsResize",
+        "onCommand:extension.tailwindDocsResponsiveDesign",
+        "onCommand:extension.tailwindDocsShadows",
+        "onCommand:extension.tailwindDocsSpacing",
+        "onCommand:extension.tailwindDocsStateVariants",
+        "onCommand:extension.tailwindDocsSvg",
+        "onCommand:extension.tailwindDocsTextAlignment",
+        "onCommand:extension.tailwindDocsTextColor",
+        "onCommand:extension.tailwindDocsTextSizing",
+        "onCommand:extension.tailwindDocsTextStyle",
+        "onCommand:extension.tailwindDocsUserSelect",
+        "onCommand:extension.tailwindDocsVerticalAlignment",
+        "onCommand:extension.tailwindDocsVisibility",
+        "onCommand:extension.tailwindDocsWhatIsTailwind",
+        "onCommand:extension.tailwindDocsWhitespaceAndWrapping",
+        "onCommand:extension.tailwindDocsWidth",
+        "onCommand:extension.tailwindDocsZIndex"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.tailwindDocsAddingNewUtilities",
+                "category": "Tailwind Docs",
+                "title": "Adding New Utilities"
+            },
+            {
+                "command": "extension.tailwindDocsBackgroundAttachment",
+                "category": "Tailwind Docs",
+                "title": "Background Attachment"
+            },
+            {
+                "command": "extension.tailwindDocsBackgroundColor",
+                "category": "Tailwind Docs",
+                "title": "Background Color"
+            },
+            {
+                "command": "extension.tailwindDocsBackgroundPosition",
+                "category": "Tailwind Docs",
+                "title": "Background Position"
+            },
+            {
+                "command": "extension.tailwindDocsBackgroundRepeat",
+                "category": "Tailwind Docs",
+                "title": "Background Repeat"
+            },
+            {
+                "command": "extension.tailwindDocsBackgroundSize",
+                "category": "Tailwind Docs",
+                "title": "Background Size"
+            },
+            {
+                "command": "extension.tailwindDocsBorderColor",
+                "category": "Tailwind Docs",
+                "title": "Border Color"
+            },
+            {
+                "command": "extension.tailwindDocsBorderRadius",
+                "category": "Tailwind Docs",
+                "title": "Border Radius"
+            },
+            {
+                "command": "extension.tailwindDocsBorderStyle",
+                "category": "Tailwind Docs",
+                "title": "Border Style"
+            },
+            {
+                "command": "extension.tailwindDocsBorderWidth",
+                "category": "Tailwind Docs",
+                "title": "Border Width"
+            },
+            {
+                "command": "extension.tailwindDocsColors",
+                "category": "Tailwind Docs",
+                "title": "Colors"
+            },
+            {
+                "command": "extension.tailwindDocsConfiguration",
+                "category": "Tailwind Docs",
+                "title": "Configuration"
+            },
+            {
+                "command": "extension.tailwindDocsContainer",
+                "category": "Tailwind Docs",
+                "title": "Container"
+            },
+            {
+                "command": "extension.tailwindDocsControllingFileSize",
+                "category": "Tailwind Docs",
+                "title": "Controlling File Size"
+            },
+            {
+                "command": "extension.tailwindDocsCursor",
+                "category": "Tailwind Docs",
+                "title": "Cursor"
+            },
+            {
+                "command": "extension.tailwindDocsDisplay",
+                "category": "Tailwind Docs",
+                "title": "Display"
+            },
+            {
+                "command": "extension.tailwindDocsExamples",
+                "category": "Tailwind Docs",
+                "title": "Examples"
+            },
+            {
+                "command": "extension.tailwindDocsExtractingComponents",
+                "category": "Tailwind Docs",
+                "title": "Extracting Components"
+            },
+            {
+                "command": "extension.tailwindDocsFlexboxAlignContent",
+                "category": "Tailwind Docs",
+                "title": "Flexbox Align Content"
+            },
+            {
+                "command": "extension.tailwindDocsFlexboxAlignItems",
+                "category": "Tailwind Docs",
+                "title": "Flexbox Align Items"
+            },
+            {
+                "command": "extension.tailwindDocsFlexboxAlignSelf",
+                "category": "Tailwind Docs",
+                "title": "Flexbox Align Self"
+            },
+            {
+                "command": "extension.tailwindDocsFlexboxDirection",
+                "category": "Tailwind Docs",
+                "title": "Flexbox Direction"
+            },
+            {
+                "command": "extension.tailwindDocsFlexboxDisplay",
+                "category": "Tailwind Docs",
+                "title": "Flexbox Display"
+            },
+            {
+                "command": "extension.tailwindDocsFlexboxFlexGrowShrink",
+                "category": "Tailwind Docs",
+                "title": "Flexbox Flex Grow Shrink"
+            },
+            {
+                "command": "extension.tailwindDocsFlexboxJustifyContent",
+                "category": "Tailwind Docs",
+                "title": "Flexbox Justify Content"
+            },
+            {
+                "command": "extension.tailwindDocsFlexboxWrapping",
+                "category": "Tailwind Docs",
+                "title": "Flexbox Wrapping"
+            },
+            {
+                "command": "extension.tailwindDocsFloats",
+                "category": "Tailwind Docs",
+                "title": "Floats"
+            },
+            {
+                "command": "extension.tailwindDocsFontWeight",
+                "category": "Tailwind Docs",
+                "title": "Font Weight"
+            },
+            {
+                "command": "extension.tailwindDocsFonts",
+                "category": "Tailwind Docs",
+                "title": "Fonts"
+            },
+            {
+                "command": "extension.tailwindDocsForms",
+                "category": "Tailwind Docs",
+                "title": "Forms"
+            },
+            {
+                "command": "extension.tailwindDocsFunctionsAndDirectives",
+                "category": "Tailwind Docs",
+                "title": "Functions And Directives"
+            },
+            {
+                "command": "extension.tailwindDocsHeight",
+                "category": "Tailwind Docs",
+                "title": "Height"
+            },
+            {
+                "command": "extension.tailwindDocsInstallation",
+                "category": "Tailwind Docs",
+                "title": "Installation"
+            },
+            {
+                "command": "extension.tailwindDocsLetterSpacing",
+                "category": "Tailwind Docs",
+                "title": "Letter Spacing"
+            },
+            {
+                "command": "extension.tailwindDocsLineHeight",
+                "category": "Tailwind Docs",
+                "title": "Line Height"
+            },
+            {
+                "command": "extension.tailwindDocsLists",
+                "category": "Tailwind Docs",
+                "title": "Lists"
+            },
+            {
+                "command": "extension.tailwindDocsMaxHeight",
+                "category": "Tailwind Docs",
+                "title": "Max Height"
+            },
+            {
+                "command": "extension.tailwindDocsMaxWidth",
+                "category": "Tailwind Docs",
+                "title": "Max Width"
+            },
+            {
+                "command": "extension.tailwindDocsMinHeight",
+                "category": "Tailwind Docs",
+                "title": "Min Height"
+            },
+            {
+                "command": "extension.tailwindDocsMinWidth",
+                "category": "Tailwind Docs",
+                "title": "Min Width"
+            },
+            {
+                "command": "extension.tailwindDocsOpacity",
+                "category": "Tailwind Docs",
+                "title": "Opacity"
+            },
+            {
+                "command": "extension.tailwindDocsOverflow",
+                "category": "Tailwind Docs",
+                "title": "Overflow"
+            },
+            {
+                "command": "extension.tailwindDocsPointerEvents",
+                "category": "Tailwind Docs",
+                "title": "Pointer Events"
+            },
+            {
+                "command": "extension.tailwindDocsPositioning",
+                "category": "Tailwind Docs",
+                "title": "Positioning"
+            },
+            {
+                "command": "extension.tailwindDocsResize",
+                "category": "Tailwind Docs",
+                "title": "Resize"
+            },
+            {
+                "command": "extension.tailwindDocsResponsiveDesign",
+                "category": "Tailwind Docs",
+                "title": "Responsive Design"
+            },
+            {
+                "command": "extension.tailwindDocsShadows",
+                "category": "Tailwind Docs",
+                "title": "Shadows"
+            },
+            {
+                "command": "extension.tailwindDocsSpacing",
+                "category": "Tailwind Docs",
+                "title": "Spacing"
+            },
+            {
+                "command": "extension.tailwindDocsStateVariants",
+                "category": "Tailwind Docs",
+                "title": "State Variants"
+            },
+            {
+                "command": "extension.tailwindDocsSvg",
+                "category": "Tailwind Docs",
+                "title": "Svg"
+            },
+            {
+                "command": "extension.tailwindDocsTextAlignment",
+                "category": "Tailwind Docs",
+                "title": "Text Alignment"
+            },
+            {
+                "command": "extension.tailwindDocsTextColor",
+                "category": "Tailwind Docs",
+                "title": "Text Color"
+            },
+            {
+                "command": "extension.tailwindDocsTextSizing",
+                "category": "Tailwind Docs",
+                "title": "Text Sizing"
+            },
+            {
+                "command": "extension.tailwindDocsTextStyle",
+                "category": "Tailwind Docs",
+                "title": "Text Style"
+            },
+            {
+                "command": "extension.tailwindDocsUserSelect",
+                "category": "Tailwind Docs",
+                "title": "User Select"
+            },
+            {
+                "command": "extension.tailwindDocsVerticalAlignment",
+                "category": "Tailwind Docs",
+                "title": "Vertical Alignment"
+            },
+            {
+                "command": "extension.tailwindDocsVisibility",
+                "category": "Tailwind Docs",
+                "title": "Visibility"
+            },
+            {
+                "command": "extension.tailwindDocsWhatIsTailwind",
+                "category": "Tailwind Docs",
+                "title": "What Is Tailwind"
+            },
+            {
+                "command": "extension.tailwindDocsWhitespaceAndWrapping",
+                "category": "Tailwind Docs",
+                "title": "Whitespace And Wrapping"
+            },
+            {
+                "command": "extension.tailwindDocsWidth",
+                "category": "Tailwind Docs",
+                "title": "Width"
+            },
+            {
+                "command": "extension.tailwindDocsZIndex",
+                "category": "Tailwind Docs",
+                "title": "Z Index"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
