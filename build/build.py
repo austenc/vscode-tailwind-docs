@@ -1,8 +1,8 @@
 import re
 import json
+from os.path import abspath, join, dirname
 import urllib.request
 from shutil import copyfile
-
 
 # Create a request with a valid User-Agent
 req = urllib.request.Request(
@@ -17,14 +17,12 @@ req = urllib.request.Request(
 
 # Pull the html from the main docs page and find all /docs links
 docs = urllib.request.urlopen(req)
-links = re.findall('href="(.+?tailwindcss\.com/docs/.*?)"', docs.read().decode('utf-8'))
+links = re.findall('href="(/docs/.*?)"', docs.read().decode('utf-8'))
 found = []
 pages = []
 
 # Compile all the info for the pages
 for url in sorted(set(links)):
-
-    url = url.replace('https://tailwindcss.com', '')
     topic = url.split('/')[2].title().replace('-', ' ').split('#')[0]
     slug = url.split('/')[2].split('#')[0]
 
@@ -37,35 +35,37 @@ for url in sorted(set(links)):
         })
 
 # Generate command definitions in package.json
-with open('../package.json', 'r') as f:
+with open(join(abspath(dirname(__file__)), '../package.json'), 'r') as f:
     data = json.load(f)
     data['contributes']['commands'] = []
     data['activationEvents'] = []
 
     for page in pages:
-        data['activationEvents'].append("onCommand:extension." + page['command'])
+        data['activationEvents'].append(
+            "onCommand:extension." + page['command'])
         data['contributes']['commands'].append({
             "command": "extension.{}".format(page['command']),
             "category": "Tailwind Docs",
             "title": page['topic'],
         })
-        
+
 with open('../package.json', 'w') as f:
     json.dump(data, f, indent=4)
 
 # Generate the extension.ts file
-with open('../src/extension.ts', 'w+') as f:
+with open(join(abspath(dirname(__file__)), '../src/extension.ts'), 'w+') as f:
     f.write("'use strict';\n")
     f.write("import * as vscode from 'vscode';\n\n")
     f.write("export function activate(context: vscode.ExtensionContext) {\n\n")
 
     for page in pages:
         f.write(
-            '    let ' + page['command'] + ' = ' + 'vscode.commands.registerCommand('
+            '    let ' + page['command'] + ' = ' +
+            'vscode.commands.registerCommand('
             + "'extension." + page['command'] + "', () => {\n"
             + "        vscode.commands.executeCommand('vscode.open', "
-                + "vscode.Uri.parse('https://tailwindcss.com/docs/" + page['slug'] 
-                + "'));\n"
+            + "vscode.Uri.parse('https://tailwindcss.com/docs/" + page['slug']
+            + "'));\n"
             + "    });\n"
             + "    context.subscriptions.push(" + page['command'] + ");\n"
         )

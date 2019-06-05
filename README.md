@@ -21,6 +21,9 @@ The files for this extension are generated from the python script `build/build.p
 
 ## Release Notes
 
+### 1.1.0 
+Updated to match Tailwind CSS version 1.0 documentation
+
 ### 1.0.0
 
 Initial release -- Tailwind CSS version 0.4.1 supported
