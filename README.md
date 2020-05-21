@@ -6,10 +6,8 @@ Easily access Tailwind docs pages from within VSCode
 
 To use this extension, simply use `⌘ + Shift + P` to open the command palette (`Ctrl` on windows / linux) and search for "Tailwind Docs" or the specific topic you're after. That's it!
 
-
-Here's an example:    
+Here's an example:  
 ![Extension Preview](img/preview.gif)
-
 
 ## Development
 
@@ -21,9 +19,14 @@ The files for this extension are generated from the python script `build/build.p
 
 ## Release Notes
 
-### 1.2.0 
-Updated to match Tailwind CSS version 1.0 documentation. 
+### 1.3.0
+
+- Updated links with Tailwind 1.4 documentation
+
+### 1.2.0
+
+- Updated to match Tailwind CSS version 1.0 documentation.
 
 ### 1.0.0
 
-Initial release -- Tailwind CSS version 0.4.1 supported
+- Initial release -- Tailwind CSS version 0.4.1 supported
