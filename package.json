@@ -2,7 +2,7 @@
     "name": "tailwind-docs",
     "displayName": "Tailwind Docs",
     "description": "Easily access the Tailwind CSS documentation from within Code",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "icon": "img/icon.jpg",
     "publisher": "austenc",
     "repository": "https://github.com/austenc/vscode-tailwind-docs",
