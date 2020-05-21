@@ -18,6 +18,7 @@ req = urllib.request.Request(
 # Pull the html from the main docs page and find all /docs links
 docs = urllib.request.urlopen(req)
 links = re.findall('href="(/docs/.*?)"', docs.read().decode('utf-8'))
+
 found = []
 pages = []
 
@@ -49,7 +50,7 @@ with open(join(abspath(dirname(__file__)), '../package.json'), 'r') as f:
             "title": page['topic'],
         })
 
-with open('../package.json', 'w') as f:
+with open(join(abspath(dirname(__file__)), '../package.json'), 'w') as f:
     json.dump(data, f, indent=4)
 
 # Generate the extension.ts file
