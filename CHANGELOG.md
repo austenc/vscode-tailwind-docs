@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 1.4.0
+
+- Support TailwindCSS 1.8+
+
 ## 1.3.0
 
 - Tailwind 1.4 support

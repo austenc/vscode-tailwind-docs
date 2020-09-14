@@ -16,17 +16,3 @@ The files for this extension are generated from the python script `build/build.p
 ```
     python3 build.py
 ```
-
-## Release Notes
-
-### 1.3.0
-
-- Updated links with Tailwind 1.4 documentation
-
-### 1.2.0
-
-- Updated to match Tailwind CSS version 1.0 documentation.
-
-### 1.0.0
-
-- Initial release -- Tailwind CSS version 0.4.1 supported
