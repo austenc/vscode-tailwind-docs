@@ -6,6 +6,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 2.0.0
+- Added MIT License
+- Added Support for Tailwind V3
+- Removed support for prior Tailwind versions
+- Updated vscode version requirements
+
+
 ## 1.4.0
 
 - Support TailwindCSS 1.8+

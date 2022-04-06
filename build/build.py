@@ -6,7 +6,7 @@ from shutil import copyfile
 
 # Create a request with a valid User-Agent
 req = urllib.request.Request(
-    'https://tailwindcss.com/',
+    'https://tailwindcss.com/docs',
     data=None,
     headers={
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) ' +

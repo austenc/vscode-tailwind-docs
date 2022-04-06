@@ -3,14 +3,14 @@ import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
 
-    let tailwindDocsAddingBaseStyles = vscode.commands.registerCommand('extension.tailwindDocsAddingBaseStyles', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/adding-base-styles'));
+    let tailwindDocsAccentColor = vscode.commands.registerCommand('extension.tailwindDocsAccentColor', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/accent-color'));
     });
-    context.subscriptions.push(tailwindDocsAddingBaseStyles);
-    let tailwindDocsAddingNewUtilities = vscode.commands.registerCommand('extension.tailwindDocsAddingNewUtilities', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/adding-new-utilities'));
+    context.subscriptions.push(tailwindDocsAccentColor);
+    let tailwindDocsAddingCustomStyles = vscode.commands.registerCommand('extension.tailwindDocsAddingCustomStyles', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/adding-custom-styles'));
     });
-    context.subscriptions.push(tailwindDocsAddingNewUtilities);
+    context.subscriptions.push(tailwindDocsAddingCustomStyles);
     let tailwindDocsAlignContent = vscode.commands.registerCommand('extension.tailwindDocsAlignContent', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/align-content'));
     });
@@ -31,10 +31,54 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/appearance'));
     });
     context.subscriptions.push(tailwindDocsAppearance);
+    let tailwindDocsAspectRatio = vscode.commands.registerCommand('extension.tailwindDocsAspectRatio', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/aspect-ratio'));
+    });
+    context.subscriptions.push(tailwindDocsAspectRatio);
+    let tailwindDocsBackdropBlur = vscode.commands.registerCommand('extension.tailwindDocsBackdropBlur', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/backdrop-blur'));
+    });
+    context.subscriptions.push(tailwindDocsBackdropBlur);
+    let tailwindDocsBackdropBrightness = vscode.commands.registerCommand('extension.tailwindDocsBackdropBrightness', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/backdrop-brightness'));
+    });
+    context.subscriptions.push(tailwindDocsBackdropBrightness);
+    let tailwindDocsBackdropContrast = vscode.commands.registerCommand('extension.tailwindDocsBackdropContrast', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/backdrop-contrast'));
+    });
+    context.subscriptions.push(tailwindDocsBackdropContrast);
+    let tailwindDocsBackdropGrayscale = vscode.commands.registerCommand('extension.tailwindDocsBackdropGrayscale', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/backdrop-grayscale'));
+    });
+    context.subscriptions.push(tailwindDocsBackdropGrayscale);
+    let tailwindDocsBackdropHueRotate = vscode.commands.registerCommand('extension.tailwindDocsBackdropHueRotate', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/backdrop-hue-rotate'));
+    });
+    context.subscriptions.push(tailwindDocsBackdropHueRotate);
+    let tailwindDocsBackdropInvert = vscode.commands.registerCommand('extension.tailwindDocsBackdropInvert', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/backdrop-invert'));
+    });
+    context.subscriptions.push(tailwindDocsBackdropInvert);
+    let tailwindDocsBackdropOpacity = vscode.commands.registerCommand('extension.tailwindDocsBackdropOpacity', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/backdrop-opacity'));
+    });
+    context.subscriptions.push(tailwindDocsBackdropOpacity);
+    let tailwindDocsBackdropSaturate = vscode.commands.registerCommand('extension.tailwindDocsBackdropSaturate', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/backdrop-saturate'));
+    });
+    context.subscriptions.push(tailwindDocsBackdropSaturate);
+    let tailwindDocsBackdropSepia = vscode.commands.registerCommand('extension.tailwindDocsBackdropSepia', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/backdrop-sepia'));
+    });
+    context.subscriptions.push(tailwindDocsBackdropSepia);
     let tailwindDocsBackgroundAttachment = vscode.commands.registerCommand('extension.tailwindDocsBackgroundAttachment', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/background-attachment'));
     });
     context.subscriptions.push(tailwindDocsBackgroundAttachment);
+    let tailwindDocsBackgroundBlendMode = vscode.commands.registerCommand('extension.tailwindDocsBackgroundBlendMode', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/background-blend-mode'));
+    });
+    context.subscriptions.push(tailwindDocsBackgroundBlendMode);
     let tailwindDocsBackgroundClip = vscode.commands.registerCommand('extension.tailwindDocsBackgroundClip', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/background-clip'));
     });
@@ -47,10 +91,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/background-image'));
     });
     context.subscriptions.push(tailwindDocsBackgroundImage);
-    let tailwindDocsBackgroundOpacity = vscode.commands.registerCommand('extension.tailwindDocsBackgroundOpacity', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/background-opacity'));
+    let tailwindDocsBackgroundOrigin = vscode.commands.registerCommand('extension.tailwindDocsBackgroundOrigin', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/background-origin'));
     });
-    context.subscriptions.push(tailwindDocsBackgroundOpacity);
+    context.subscriptions.push(tailwindDocsBackgroundOrigin);
     let tailwindDocsBackgroundPosition = vscode.commands.registerCommand('extension.tailwindDocsBackgroundPosition', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/background-position'));
     });
@@ -63,6 +107,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/background-size'));
     });
     context.subscriptions.push(tailwindDocsBackgroundSize);
+    let tailwindDocsBlur = vscode.commands.registerCommand('extension.tailwindDocsBlur', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/blur'));
+    });
+    context.subscriptions.push(tailwindDocsBlur);
     let tailwindDocsBorderCollapse = vscode.commands.registerCommand('extension.tailwindDocsBorderCollapse', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/border-collapse'));
     });
@@ -71,10 +119,6 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/border-color'));
     });
     context.subscriptions.push(tailwindDocsBorderColor);
-    let tailwindDocsBorderOpacity = vscode.commands.registerCommand('extension.tailwindDocsBorderOpacity', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/border-opacity'));
-    });
-    context.subscriptions.push(tailwindDocsBorderOpacity);
     let tailwindDocsBorderRadius = vscode.commands.registerCommand('extension.tailwindDocsBorderRadius', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/border-radius'));
     });
@@ -87,42 +131,74 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/border-width'));
     });
     context.subscriptions.push(tailwindDocsBorderWidth);
+    let tailwindDocsBoxDecorationBreak = vscode.commands.registerCommand('extension.tailwindDocsBoxDecorationBreak', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/box-decoration-break'));
+    });
+    context.subscriptions.push(tailwindDocsBoxDecorationBreak);
     let tailwindDocsBoxShadow = vscode.commands.registerCommand('extension.tailwindDocsBoxShadow', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/box-shadow'));
     });
     context.subscriptions.push(tailwindDocsBoxShadow);
+    let tailwindDocsBoxShadowColor = vscode.commands.registerCommand('extension.tailwindDocsBoxShadowColor', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/box-shadow-color'));
+    });
+    context.subscriptions.push(tailwindDocsBoxShadowColor);
     let tailwindDocsBoxSizing = vscode.commands.registerCommand('extension.tailwindDocsBoxSizing', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/box-sizing'));
     });
     context.subscriptions.push(tailwindDocsBoxSizing);
-    let tailwindDocsBreakpoints = vscode.commands.registerCommand('extension.tailwindDocsBreakpoints', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/breakpoints'));
+    let tailwindDocsBreakAfter = vscode.commands.registerCommand('extension.tailwindDocsBreakAfter', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/break-after'));
     });
-    context.subscriptions.push(tailwindDocsBreakpoints);
+    context.subscriptions.push(tailwindDocsBreakAfter);
+    let tailwindDocsBreakBefore = vscode.commands.registerCommand('extension.tailwindDocsBreakBefore', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/break-before'));
+    });
+    context.subscriptions.push(tailwindDocsBreakBefore);
+    let tailwindDocsBreakInside = vscode.commands.registerCommand('extension.tailwindDocsBreakInside', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/break-inside'));
+    });
+    context.subscriptions.push(tailwindDocsBreakInside);
+    let tailwindDocsBrightness = vscode.commands.registerCommand('extension.tailwindDocsBrightness', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/brightness'));
+    });
+    context.subscriptions.push(tailwindDocsBrightness);
     let tailwindDocsBrowserSupport = vscode.commands.registerCommand('extension.tailwindDocsBrowserSupport', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/browser-support'));
     });
     context.subscriptions.push(tailwindDocsBrowserSupport);
+    let tailwindDocsCaretColor = vscode.commands.registerCommand('extension.tailwindDocsCaretColor', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/caret-color'));
+    });
+    context.subscriptions.push(tailwindDocsCaretColor);
     let tailwindDocsClear = vscode.commands.registerCommand('extension.tailwindDocsClear', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/clear'));
     });
     context.subscriptions.push(tailwindDocsClear);
+    let tailwindDocsColumns = vscode.commands.registerCommand('extension.tailwindDocsColumns', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/columns'));
+    });
+    context.subscriptions.push(tailwindDocsColumns);
     let tailwindDocsConfiguration = vscode.commands.registerCommand('extension.tailwindDocsConfiguration', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/configuration'));
     });
     context.subscriptions.push(tailwindDocsConfiguration);
-    let tailwindDocsConfiguringVariants = vscode.commands.registerCommand('extension.tailwindDocsConfiguringVariants', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/configuring-variants'));
-    });
-    context.subscriptions.push(tailwindDocsConfiguringVariants);
     let tailwindDocsContainer = vscode.commands.registerCommand('extension.tailwindDocsContainer', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/container'));
     });
     context.subscriptions.push(tailwindDocsContainer);
-    let tailwindDocsControllingFileSize = vscode.commands.registerCommand('extension.tailwindDocsControllingFileSize', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/controlling-file-size'));
+    let tailwindDocsContent = vscode.commands.registerCommand('extension.tailwindDocsContent', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/content'));
     });
-    context.subscriptions.push(tailwindDocsControllingFileSize);
+    context.subscriptions.push(tailwindDocsContent);
+    let tailwindDocsContentConfiguration = vscode.commands.registerCommand('extension.tailwindDocsContentConfiguration', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/content-configuration'));
+    });
+    context.subscriptions.push(tailwindDocsContentConfiguration);
+    let tailwindDocsContrast = vscode.commands.registerCommand('extension.tailwindDocsContrast', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/contrast'));
+    });
+    context.subscriptions.push(tailwindDocsContrast);
     let tailwindDocsCursor = vscode.commands.registerCommand('extension.tailwindDocsCursor', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/cursor'));
     });
@@ -135,6 +211,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/customizing-spacing'));
     });
     context.subscriptions.push(tailwindDocsCustomizingSpacing);
+    let tailwindDocsDarkMode = vscode.commands.registerCommand('extension.tailwindDocsDarkMode', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/dark-mode'));
+    });
+    context.subscriptions.push(tailwindDocsDarkMode);
     let tailwindDocsDisplay = vscode.commands.registerCommand('extension.tailwindDocsDisplay', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/display'));
     });
@@ -143,10 +223,6 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/divide-color'));
     });
     context.subscriptions.push(tailwindDocsDivideColor);
-    let tailwindDocsDivideOpacity = vscode.commands.registerCommand('extension.tailwindDocsDivideOpacity', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/divide-opacity'));
-    });
-    context.subscriptions.push(tailwindDocsDivideOpacity);
     let tailwindDocsDivideStyle = vscode.commands.registerCommand('extension.tailwindDocsDivideStyle', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/divide-style'));
     });
@@ -155,10 +231,14 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/divide-width'));
     });
     context.subscriptions.push(tailwindDocsDivideWidth);
-    let tailwindDocsExtractingComponents = vscode.commands.registerCommand('extension.tailwindDocsExtractingComponents', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/extracting-components'));
+    let tailwindDocsDropShadow = vscode.commands.registerCommand('extension.tailwindDocsDropShadow', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/drop-shadow'));
     });
-    context.subscriptions.push(tailwindDocsExtractingComponents);
+    context.subscriptions.push(tailwindDocsDropShadow);
+    let tailwindDocsEditorSetup = vscode.commands.registerCommand('extension.tailwindDocsEditorSetup', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/editor-setup'));
+    });
+    context.subscriptions.push(tailwindDocsEditorSetup);
     let tailwindDocsFill = vscode.commands.registerCommand('extension.tailwindDocsFill', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/fill'));
     });
@@ -167,6 +247,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/flex'));
     });
     context.subscriptions.push(tailwindDocsFlex);
+    let tailwindDocsFlexBasis = vscode.commands.registerCommand('extension.tailwindDocsFlexBasis', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/flex-basis'));
+    });
+    context.subscriptions.push(tailwindDocsFlexBasis);
     let tailwindDocsFlexDirection = vscode.commands.registerCommand('extension.tailwindDocsFlexDirection', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/flex-direction'));
     });
@@ -223,10 +307,22 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/gradient-color-stops'));
     });
     context.subscriptions.push(tailwindDocsGradientColorStops);
+    let tailwindDocsGrayscale = vscode.commands.registerCommand('extension.tailwindDocsGrayscale', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/grayscale'));
+    });
+    context.subscriptions.push(tailwindDocsGrayscale);
+    let tailwindDocsGridAutoColumns = vscode.commands.registerCommand('extension.tailwindDocsGridAutoColumns', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/grid-auto-columns'));
+    });
+    context.subscriptions.push(tailwindDocsGridAutoColumns);
     let tailwindDocsGridAutoFlow = vscode.commands.registerCommand('extension.tailwindDocsGridAutoFlow', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/grid-auto-flow'));
     });
     context.subscriptions.push(tailwindDocsGridAutoFlow);
+    let tailwindDocsGridAutoRows = vscode.commands.registerCommand('extension.tailwindDocsGridAutoRows', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/grid-auto-rows'));
+    });
+    context.subscriptions.push(tailwindDocsGridAutoRows);
     let tailwindDocsGridColumn = vscode.commands.registerCommand('extension.tailwindDocsGridColumn', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/grid-column'));
     });
@@ -247,14 +343,26 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/height'));
     });
     context.subscriptions.push(tailwindDocsHeight);
+    let tailwindDocsHoverFocusAndOtherStates = vscode.commands.registerCommand('extension.tailwindDocsHoverFocusAndOtherStates', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/hover-focus-and-other-states'));
+    });
+    context.subscriptions.push(tailwindDocsHoverFocusAndOtherStates);
+    let tailwindDocsHueRotate = vscode.commands.registerCommand('extension.tailwindDocsHueRotate', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/hue-rotate'));
+    });
+    context.subscriptions.push(tailwindDocsHueRotate);
     let tailwindDocsInstallation = vscode.commands.registerCommand('extension.tailwindDocsInstallation', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/installation'));
     });
     context.subscriptions.push(tailwindDocsInstallation);
-    let tailwindDocsIntellisense = vscode.commands.registerCommand('extension.tailwindDocsIntellisense', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/intellisense'));
+    let tailwindDocsInvert = vscode.commands.registerCommand('extension.tailwindDocsInvert', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/invert'));
     });
-    context.subscriptions.push(tailwindDocsIntellisense);
+    context.subscriptions.push(tailwindDocsInvert);
+    let tailwindDocsIsolation = vscode.commands.registerCommand('extension.tailwindDocsIsolation', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/isolation'));
+    });
+    context.subscriptions.push(tailwindDocsIsolation);
     let tailwindDocsJustifyContent = vscode.commands.registerCommand('extension.tailwindDocsJustifyContent', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/justify-content'));
     });
@@ -303,6 +411,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/min-width'));
     });
     context.subscriptions.push(tailwindDocsMinWidth);
+    let tailwindDocsMixBlendMode = vscode.commands.registerCommand('extension.tailwindDocsMixBlendMode', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/mix-blend-mode'));
+    });
+    context.subscriptions.push(tailwindDocsMixBlendMode);
     let tailwindDocsObjectFit = vscode.commands.registerCommand('extension.tailwindDocsObjectFit', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/object-fit'));
     });
@@ -315,14 +427,30 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/opacity'));
     });
     context.subscriptions.push(tailwindDocsOpacity);
+    let tailwindDocsOptimizingForProduction = vscode.commands.registerCommand('extension.tailwindDocsOptimizingForProduction', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/optimizing-for-production'));
+    });
+    context.subscriptions.push(tailwindDocsOptimizingForProduction);
     let tailwindDocsOrder = vscode.commands.registerCommand('extension.tailwindDocsOrder', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/order'));
     });
     context.subscriptions.push(tailwindDocsOrder);
-    let tailwindDocsOutline = vscode.commands.registerCommand('extension.tailwindDocsOutline', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/outline'));
+    let tailwindDocsOutlineColor = vscode.commands.registerCommand('extension.tailwindDocsOutlineColor', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/outline-color'));
     });
-    context.subscriptions.push(tailwindDocsOutline);
+    context.subscriptions.push(tailwindDocsOutlineColor);
+    let tailwindDocsOutlineOffset = vscode.commands.registerCommand('extension.tailwindDocsOutlineOffset', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/outline-offset'));
+    });
+    context.subscriptions.push(tailwindDocsOutlineOffset);
+    let tailwindDocsOutlineStyle = vscode.commands.registerCommand('extension.tailwindDocsOutlineStyle', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/outline-style'));
+    });
+    context.subscriptions.push(tailwindDocsOutlineStyle);
+    let tailwindDocsOutlineWidth = vscode.commands.registerCommand('extension.tailwindDocsOutlineWidth', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/outline-width'));
+    });
+    context.subscriptions.push(tailwindDocsOutlineWidth);
     let tailwindDocsOverflow = vscode.commands.registerCommand('extension.tailwindDocsOverflow', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/overflow'));
     });
@@ -347,14 +475,6 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/place-self'));
     });
     context.subscriptions.push(tailwindDocsPlaceSelf);
-    let tailwindDocsPlaceholderColor = vscode.commands.registerCommand('extension.tailwindDocsPlaceholderColor', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/placeholder-color'));
-    });
-    context.subscriptions.push(tailwindDocsPlaceholderColor);
-    let tailwindDocsPlaceholderOpacity = vscode.commands.registerCommand('extension.tailwindDocsPlaceholderOpacity', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/placeholder-opacity'));
-    });
-    context.subscriptions.push(tailwindDocsPlaceholderOpacity);
     let tailwindDocsPlugins = vscode.commands.registerCommand('extension.tailwindDocsPlugins', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/plugins'));
     });
@@ -371,14 +491,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/preflight'));
     });
     context.subscriptions.push(tailwindDocsPreflight);
-    let tailwindDocsPseudoClassVariants = vscode.commands.registerCommand('extension.tailwindDocsPseudoClassVariants', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/pseudo-class-variants'));
+    let tailwindDocsPresets = vscode.commands.registerCommand('extension.tailwindDocsPresets', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/presets'));
     });
-    context.subscriptions.push(tailwindDocsPseudoClassVariants);
-    let tailwindDocsReleaseNotes = vscode.commands.registerCommand('extension.tailwindDocsReleaseNotes', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/release-notes'));
-    });
-    context.subscriptions.push(tailwindDocsReleaseNotes);
+    context.subscriptions.push(tailwindDocsPresets);
     let tailwindDocsResize = vscode.commands.registerCommand('extension.tailwindDocsResize', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/resize'));
     });
@@ -387,10 +503,34 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/responsive-design'));
     });
     context.subscriptions.push(tailwindDocsResponsiveDesign);
+    let tailwindDocsReusingStyles = vscode.commands.registerCommand('extension.tailwindDocsReusingStyles', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/reusing-styles'));
+    });
+    context.subscriptions.push(tailwindDocsReusingStyles);
+    let tailwindDocsRingColor = vscode.commands.registerCommand('extension.tailwindDocsRingColor', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/ring-color'));
+    });
+    context.subscriptions.push(tailwindDocsRingColor);
+    let tailwindDocsRingOffsetColor = vscode.commands.registerCommand('extension.tailwindDocsRingOffsetColor', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/ring-offset-color'));
+    });
+    context.subscriptions.push(tailwindDocsRingOffsetColor);
+    let tailwindDocsRingOffsetWidth = vscode.commands.registerCommand('extension.tailwindDocsRingOffsetWidth', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/ring-offset-width'));
+    });
+    context.subscriptions.push(tailwindDocsRingOffsetWidth);
+    let tailwindDocsRingWidth = vscode.commands.registerCommand('extension.tailwindDocsRingWidth', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/ring-width'));
+    });
+    context.subscriptions.push(tailwindDocsRingWidth);
     let tailwindDocsRotate = vscode.commands.registerCommand('extension.tailwindDocsRotate', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/rotate'));
     });
     context.subscriptions.push(tailwindDocsRotate);
+    let tailwindDocsSaturate = vscode.commands.registerCommand('extension.tailwindDocsSaturate', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/saturate'));
+    });
+    context.subscriptions.push(tailwindDocsSaturate);
     let tailwindDocsScale = vscode.commands.registerCommand('extension.tailwindDocsScale', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/scale'));
     });
@@ -399,6 +539,38 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/screen-readers'));
     });
     context.subscriptions.push(tailwindDocsScreenReaders);
+    let tailwindDocsScreens = vscode.commands.registerCommand('extension.tailwindDocsScreens', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/screens'));
+    });
+    context.subscriptions.push(tailwindDocsScreens);
+    let tailwindDocsScrollBehavior = vscode.commands.registerCommand('extension.tailwindDocsScrollBehavior', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/scroll-behavior'));
+    });
+    context.subscriptions.push(tailwindDocsScrollBehavior);
+    let tailwindDocsScrollMargin = vscode.commands.registerCommand('extension.tailwindDocsScrollMargin', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/scroll-margin'));
+    });
+    context.subscriptions.push(tailwindDocsScrollMargin);
+    let tailwindDocsScrollPadding = vscode.commands.registerCommand('extension.tailwindDocsScrollPadding', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/scroll-padding'));
+    });
+    context.subscriptions.push(tailwindDocsScrollPadding);
+    let tailwindDocsScrollSnapAlign = vscode.commands.registerCommand('extension.tailwindDocsScrollSnapAlign', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/scroll-snap-align'));
+    });
+    context.subscriptions.push(tailwindDocsScrollSnapAlign);
+    let tailwindDocsScrollSnapStop = vscode.commands.registerCommand('extension.tailwindDocsScrollSnapStop', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/scroll-snap-stop'));
+    });
+    context.subscriptions.push(tailwindDocsScrollSnapStop);
+    let tailwindDocsScrollSnapType = vscode.commands.registerCommand('extension.tailwindDocsScrollSnapType', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/scroll-snap-type'));
+    });
+    context.subscriptions.push(tailwindDocsScrollSnapType);
+    let tailwindDocsSepia = vscode.commands.registerCommand('extension.tailwindDocsSepia', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/sepia'));
+    });
+    context.subscriptions.push(tailwindDocsSepia);
     let tailwindDocsSkew = vscode.commands.registerCommand('extension.tailwindDocsSkew', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/skew'));
     });
@@ -431,14 +603,34 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/text-decoration'));
     });
     context.subscriptions.push(tailwindDocsTextDecoration);
-    let tailwindDocsTextOpacity = vscode.commands.registerCommand('extension.tailwindDocsTextOpacity', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/text-opacity'));
+    let tailwindDocsTextDecorationColor = vscode.commands.registerCommand('extension.tailwindDocsTextDecorationColor', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/text-decoration-color'));
     });
-    context.subscriptions.push(tailwindDocsTextOpacity);
+    context.subscriptions.push(tailwindDocsTextDecorationColor);
+    let tailwindDocsTextDecorationStyle = vscode.commands.registerCommand('extension.tailwindDocsTextDecorationStyle', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/text-decoration-style'));
+    });
+    context.subscriptions.push(tailwindDocsTextDecorationStyle);
+    let tailwindDocsTextDecorationThickness = vscode.commands.registerCommand('extension.tailwindDocsTextDecorationThickness', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/text-decoration-thickness'));
+    });
+    context.subscriptions.push(tailwindDocsTextDecorationThickness);
+    let tailwindDocsTextIndent = vscode.commands.registerCommand('extension.tailwindDocsTextIndent', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/text-indent'));
+    });
+    context.subscriptions.push(tailwindDocsTextIndent);
+    let tailwindDocsTextOverflow = vscode.commands.registerCommand('extension.tailwindDocsTextOverflow', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/text-overflow'));
+    });
+    context.subscriptions.push(tailwindDocsTextOverflow);
     let tailwindDocsTextTransform = vscode.commands.registerCommand('extension.tailwindDocsTextTransform', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/text-transform'));
     });
     context.subscriptions.push(tailwindDocsTextTransform);
+    let tailwindDocsTextUnderlineOffset = vscode.commands.registerCommand('extension.tailwindDocsTextUnderlineOffset', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/text-underline-offset'));
+    });
+    context.subscriptions.push(tailwindDocsTextUnderlineOffset);
     let tailwindDocsTheme = vscode.commands.registerCommand('extension.tailwindDocsTheme', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/theme'));
     });
@@ -447,6 +639,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/top-right-bottom-left'));
     });
     context.subscriptions.push(tailwindDocsTopRightBottomLeft);
+    let tailwindDocsTouchAction = vscode.commands.registerCommand('extension.tailwindDocsTouchAction', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/touch-action'));
+    });
+    context.subscriptions.push(tailwindDocsTouchAction);
     let tailwindDocsTransformOrigin = vscode.commands.registerCommand('extension.tailwindDocsTransformOrigin', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/transform-origin'));
     });
@@ -475,14 +671,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/typography-plugin'));
     });
     context.subscriptions.push(tailwindDocsTypographyPlugin);
-    let tailwindDocsUpcomingChanges = vscode.commands.registerCommand('extension.tailwindDocsUpcomingChanges', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/upcoming-changes'));
+    let tailwindDocsUpgradeGuide = vscode.commands.registerCommand('extension.tailwindDocsUpgradeGuide', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/upgrade-guide'));
     });
-    context.subscriptions.push(tailwindDocsUpcomingChanges);
-    let tailwindDocsUpgradingToV1 = vscode.commands.registerCommand('extension.tailwindDocsUpgradingToV1', () => {
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/upgrading-to-v1'));
-    });
-    context.subscriptions.push(tailwindDocsUpgradingToV1);
+    context.subscriptions.push(tailwindDocsUpgradeGuide);
     let tailwindDocsUserSelect = vscode.commands.registerCommand('extension.tailwindDocsUserSelect', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/user-select'));
     });
@@ -511,6 +703,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/width'));
     });
     context.subscriptions.push(tailwindDocsWidth);
+    let tailwindDocsWillChange = vscode.commands.registerCommand('extension.tailwindDocsWillChange', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/will-change'));
+    });
+    context.subscriptions.push(tailwindDocsWillChange);
     let tailwindDocsWordBreak = vscode.commands.registerCommand('extension.tailwindDocsWordBreak', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://tailwindcss.com/docs/word-break'));
     });
