@@ -64,7 +64,7 @@ with open(join(abspath(dirname(__file__)), '../src/extension.ts'), 'w+') as f:
             '    let ' + page['command'] + ' = ' +
             'vscode.commands.registerCommand('
             + "'extension." + page['command'] + "', () => {\n"
-            + "        vscode.commands.executeCommand('vscode.open', "
+            + "        vscode.commands.executeCommand('simpleBrowser.show', "
             + "vscode.Uri.parse('https://tailwindcss.com/docs/" + page['slug']
             + "'));\n"
             + "    });\n"
