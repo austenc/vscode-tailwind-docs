@@ -199,6 +199,17 @@
     ],
     "main": "./out/extension",
     "contributes": {
+        "configuration": {
+            "title": "Tailwind Docs",
+            "properties": {
+                "tailwindDocs.useSimpleBrowser": {
+                    "type": "boolean",
+                    "default": false,
+                    "markdownDescription": "Open documentation in SimpleBrowser",
+                    "scope": "resource"
+                }
+            }
+        },
         "commands": [
             {
                 "command": "extension.tailwindDocsAccentColor",
