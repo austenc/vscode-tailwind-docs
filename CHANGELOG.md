@@ -6,6 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 2.1.0
+
 - Default to opening documentation in a simple browser within vscode
 
 ## 2.0.0
