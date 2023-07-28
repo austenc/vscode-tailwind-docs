@@ -6,6 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+- Default to opening documentation in a simple browser within vscode
+
 ## 2.0.0
 - Added MIT License
 - Added Support for Tailwind V3
