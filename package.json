@@ -204,8 +204,8 @@
             "properties": {
                 "tailwindDocs.useSimpleBrowser": {
                     "type": "boolean",
-                    "default": false,
-                    "markdownDescription": "Open documentation in SimpleBrowser",
+                    "default": true,
+                    "markdownDescription": "Open documentation in a browser within VS Code.",
                     "scope": "resource"
                 }
             }
