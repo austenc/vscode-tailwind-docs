@@ -58,13 +58,15 @@ with open(join(abspath(dirname(__file__)), '../src/extension.ts'), 'w+') as f:
     f.write("'use strict';\n")
     f.write("import * as vscode from 'vscode';\n\n")
     f.write("export function activate(context: vscode.ExtensionContext) {\n\n")
+    f.write("    const config = vscode.workspace.getConfiguration('tailwindDocs');\n")
+    f.write("    const commandName = config.useSimpleBrowser ? 'simpleBrowser.show' : 'vscode.open';\n\n")
 
     for page in pages:
         f.write(
             '    let ' + page['command'] + ' = ' +
             'vscode.commands.registerCommand('
             + "'extension." + page['command'] + "', () => {\n"
-            + "        vscode.commands.executeCommand('vscode.open', "
+            + "        vscode.commands.executeCommand(commandName, "
             + "vscode.Uri.parse('https://tailwindcss.com/docs/" + page['slug']
             + "'));\n"
             + "    });\n"

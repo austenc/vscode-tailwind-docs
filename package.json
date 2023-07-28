@@ -2,7 +2,7 @@
     "name": "tailwind-docs",
     "displayName": "Tailwind Docs",
     "description": "Easily access the Tailwind CSS documentation from within Code",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "icon": "img/icon.jpg",
     "publisher": "austenc",
     "repository": "https://github.com/austenc/vscode-tailwind-docs",
@@ -43,6 +43,7 @@
         "onCommand:extension.tailwindDocsBorderCollapse",
         "onCommand:extension.tailwindDocsBorderColor",
         "onCommand:extension.tailwindDocsBorderRadius",
+        "onCommand:extension.tailwindDocsBorderSpacing",
         "onCommand:extension.tailwindDocsBorderStyle",
         "onCommand:extension.tailwindDocsBorderWidth",
         "onCommand:extension.tailwindDocsBoxDecorationBreak",
@@ -54,6 +55,7 @@
         "onCommand:extension.tailwindDocsBreakInside",
         "onCommand:extension.tailwindDocsBrightness",
         "onCommand:extension.tailwindDocsBrowserSupport",
+        "onCommand:extension.tailwindDocsCaptionSide",
         "onCommand:extension.tailwindDocsCaretColor",
         "onCommand:extension.tailwindDocsClear",
         "onCommand:extension.tailwindDocsColumns",
@@ -100,6 +102,7 @@
         "onCommand:extension.tailwindDocsHeight",
         "onCommand:extension.tailwindDocsHoverFocusAndOtherStates",
         "onCommand:extension.tailwindDocsHueRotate",
+        "onCommand:extension.tailwindDocsHyphens",
         "onCommand:extension.tailwindDocsInstallation",
         "onCommand:extension.tailwindDocsInvert",
         "onCommand:extension.tailwindDocsIsolation",
@@ -107,7 +110,9 @@
         "onCommand:extension.tailwindDocsJustifyItems",
         "onCommand:extension.tailwindDocsJustifySelf",
         "onCommand:extension.tailwindDocsLetterSpacing",
+        "onCommand:extension.tailwindDocsLineClamp",
         "onCommand:extension.tailwindDocsLineHeight",
+        "onCommand:extension.tailwindDocsListStyleImage",
         "onCommand:extension.tailwindDocsListStylePosition",
         "onCommand:extension.tailwindDocsListStyleType",
         "onCommand:extension.tailwindDocsMargin",
@@ -194,6 +199,17 @@
     ],
     "main": "./out/extension",
     "contributes": {
+        "configuration": {
+            "title": "Tailwind Docs",
+            "properties": {
+                "tailwindDocs.useSimpleBrowser": {
+                    "type": "boolean",
+                    "default": false,
+                    "markdownDescription": "Open documentation in SimpleBrowser",
+                    "scope": "resource"
+                }
+            }
+        },
         "commands": [
             {
                 "command": "extension.tailwindDocsAccentColor",
@@ -346,6 +362,11 @@
                 "title": "Border Radius"
             },
             {
+                "command": "extension.tailwindDocsBorderSpacing",
+                "category": "Tailwind Docs",
+                "title": "Border Spacing"
+            },
+            {
                 "command": "extension.tailwindDocsBorderStyle",
                 "category": "Tailwind Docs",
                 "title": "Border Style"
@@ -399,6 +420,11 @@
                 "command": "extension.tailwindDocsBrowserSupport",
                 "category": "Tailwind Docs",
                 "title": "Browser Support"
+            },
+            {
+                "command": "extension.tailwindDocsCaptionSide",
+                "category": "Tailwind Docs",
+                "title": "Caption Side"
             },
             {
                 "command": "extension.tailwindDocsCaretColor",
@@ -631,6 +657,11 @@
                 "title": "Hue Rotate"
             },
             {
+                "command": "extension.tailwindDocsHyphens",
+                "category": "Tailwind Docs",
+                "title": "Hyphens"
+            },
+            {
                 "command": "extension.tailwindDocsInstallation",
                 "category": "Tailwind Docs",
                 "title": "Installation"
@@ -666,9 +697,19 @@
                 "title": "Letter Spacing"
             },
             {
+                "command": "extension.tailwindDocsLineClamp",
+                "category": "Tailwind Docs",
+                "title": "Line Clamp"
+            },
+            {
                 "command": "extension.tailwindDocsLineHeight",
                 "category": "Tailwind Docs",
                 "title": "Line Height"
+            },
+            {
+                "command": "extension.tailwindDocsListStyleImage",
+                "category": "Tailwind Docs",
+                "title": "List Style Image"
             },
             {
                 "command": "extension.tailwindDocsListStylePosition",
